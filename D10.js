@@ -500,7 +500,19 @@ halfTree(5)
   *****
 
 */
-
+function tree(num){
+  for(let i = 0; i <= num; i++){
+    let albero = ""
+    for(let x = 0; x < num - i; x++){
+      albero += " "
+    }
+    for(let y = 0; y<i; y++){
+      albero += " *"
+    }
+    console.log(albero)
+  }
+}
+tree(4)
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
